@@ -17,25 +17,28 @@
 
                 </ul>
         </header>
-
+        
         <main>
             <form>
-
                 <label for="nomesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome">
-                <label for="Whatsaap">Whatsaap ou Telegram</label>
-                <input type="text" id="Whatsaap">
-                
-                <input type="submit">
-               
+                <input type="text" id="nomesobrenome" placeholder="digite seu Nome aqui" class="input-padrao" required>
+                        
+                <label for="Whatsapp">Whatsaap</label>
+                <input type="tel" id="Whatsaap" placeholder="(98) 9xxxx-xxxx" class="input-padrao" required>
+        
+                <input type="submit" name="acao" value="Enviar">
             </form>
 
-
-
+            <div>
+                <p>Qual horário prefere receber seu retorno?</p>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </div>
         </main>
-
-            
-
+        
         <footer>
             
         </footer>
