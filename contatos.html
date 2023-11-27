@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br" >
 
@@ -13,22 +14,43 @@
                 <ul>
                     <li><a href="index.html">Home/Localização</a></li>
                     <li><a href="videos.html"> videos</a></li>
-                    <li>Chat (Futuramente)</li>
+                    <li>Chat (Em breve)</li>
 
                 </ul>
         </header>
         
         <main>
-            <form>
-                <label for="nomesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome" placeholder="digite seu Nome aqui" class="input-padrao" required>
-                        
-                <label for="Whatsapp">Whatsaap</label>
-                <input type="tel" id="Whatsaap" placeholder="(98) 9xxxx-xxxx" class="input-padrao" required>
-        
-                <input type="submit" name="acao" value="Enviar">
-            </form>
+            <body>
+                <form action="gravandodados.php" class="formulario" method="post">
+                    <h1> Envie uma mensagem preenchendo o formulário abaixo</h1>
+                
+                <div class="field">
+                    <label for="nomesobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" placeholder="digite seu Nome aqui" class="input-padrao" required>
+                </div>
+                
+                <div class="field">
+                    <label for="Whatsapp">Whatsaap</label>
+                    <input type="tel" id="Whatsaap" placeholder="(98) 9xxxx-xxxx" class="input-padrao" required>
+                </div>
 
+                <div class="field">
+                    <label for="email">email</label>
+                    <input type="email" id="email" placeholder="********@*****" class="input-padrao" required>
+                </div>
+
+                <div class="field">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+                </div>
+                
+                        
+               
+            </form>
+            <input type="submit" name="acao" value="Enviar">
+
+            
+                       
             <div>
                 <p>Qual horário prefere receber seu retorno?</p>
                 <select>
@@ -37,10 +59,12 @@
                     <option>Noite</option>
                 </select>
             </div>
+                        
         </main>
-        
+                
+                                
         <footer>
-            
+         
         </footer>
     </body>
 </html>
