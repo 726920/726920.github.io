@@ -8,8 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //$date=date("d/m/Y");
     $msg=$_POST['mensagem'];
     
-    echo "<p>Olá seu nome :, ". $nomesobrenome ."</p>"; 
-    echo "<p>Seu telefone : ". $Whatsapp ."</p>";
-    echo "<p>Seu email : ". $email ."</p>";  
+   // echo "<p>Olá seu nome :, ". $nomesobrenome ."</p>"; 
+   // echo "<p>Seu telefone : ". $Whatsapp ."</p>";
+   // echo "<p>Seu email : ". $email ."</p>";  
 }  
 ?>
