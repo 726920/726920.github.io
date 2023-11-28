@@ -1,13 +1,25 @@
 <?php
-    include 'gravandodados.php';    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Criando nossas variáveis para guardar as informações do formulário
+        $nomesobrenome=$_POST['nomesobrenome'];
+        $Whatsapp=$_POST['Whatsapp'];
+        $email=$_POST['email'];
+        //$radio=$_POST['novidades'];
+        //$date=date("d/m/Y");
+        $msg=$_POST['mensagem'];
+        
+       // echo "<p>Olá seu nome :, ". $nomesobrenome ."</p>"; 
+       // echo "<p>Seu telefone : ". $Whatsapp ."</p>";
+       // echo "<p>Seu email : ". $email ."</p>";  
+    }      
     
     // formatando nossa mensagem (que será envaida ao e-mail)
     $mensagem= 'Esta mensagem foi enviada através do formulário<br><br>';
-    $mensagem.='<b>Nome: </b>'.$nome.'<br>';
-    $mensagem.='<b>Telefone:</b> '.$telefone.'<br>';
+    $mensagem.='<b>Nome: </b>'.$nomesobrenome.'<br>';
+    $mensagem.='<b>Telefone:</b> '.$Whatsapp.'<br>';
     $mensagem.='<b>E-Mail:</b> '.$email.'<br>';
     //$mensagem.='<b>Deseja receber novidades:</b> '.$radio.'<br>';
-    $mensagem.='<b>Data de envio:</b> '.$date.'<br>';
+    //$mensagem.='<b>Data de envio:</b> '.$date.'<br>';
     $mensagem.='<b>Mensagem:</b><br> '.$msg;
     // abaixo as requisições do arquivo phpmailer phpmailer
     require("phpmailer/src/PHPMailer.php");
